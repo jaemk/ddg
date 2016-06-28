@@ -1,0 +1,689 @@
+{
+   "DefinitionSource" : "",
+   "Heading" : "Apple",
+   "ImageWidth" : 0,
+   "RelatedTopics" : [
+      {
+         "Result" : "<a href=\"https://duckduckgo.com/Apple\">Apple</a>A deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple.",
+         "Icon" : {
+            "URL" : "https://duckduckgo.com/i/b5c79bb9.jpg",
+            "Height" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "https://duckduckgo.com/Apple",
+         "Text" : "AppleA deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple."
+      },
+      {
+         "Result" : "<a href=\"https://duckduckgo.com/Apple_Inc.\">Apple Inc.</a>Apple Inc. is an American multinational technology company headquartered in Cupertino, California...",
+         "Icon" : {
+            "URL" : "https://duckduckgo.com/i/apple.com.ico",
+            "Height" : 16,
+            "Width" : 16
+         },
+         "FirstURL" : "https://duckduckgo.com/Apple_Inc.",
+         "Text" : "Apple Inc.Apple Inc. is an American multinational technology company headquartered in Cupertino, California..."
+      },
+      {
+         "Result" : "<a href=\"https://duckduckgo.com/Apple_I\">Apple I</a>Apple Computer 1, also known later as the Apple I, or Apple-1, was released by the Apple Computer...",
+         "Icon" : {
+            "URL" : "",
+            "Height" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "https://duckduckgo.com/Apple_I",
+         "Text" : "Apple IApple Computer 1, also known later as the Apple I, or Apple-1, was released by the Apple Computer..."
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Malus\">Malus</a> A genus of about 30\u201355 species of small deciduous apple trees or shrubs in the family Rosaceae...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/945a76f8.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Malus",
+               "Text" : "Malus A genus of about 30\u201355 species of small deciduous apple trees or shrubs in the family Rosaceae..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Cashew_apple\">Cashew apple</a> The fruit that grows with the cashew nut.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Cashew_apple",
+               "Text" : "Cashew apple The fruit that grows with the cashew nut."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Custard_apple\">Custard apple</a>A common name for a fruit, and the tree which bears it, Annona reticulata Custard apple may also...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Custard_apple",
+               "Text" : "Custard appleA common name for a fruit, and the tree which bears it, Annona reticulata Custard apple may also..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Love_apple\">Love apple</a> The term love apple may refer to...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Love_apple",
+               "Text" : "Love apple The term love apple may refer to..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Tomato\">Tomato</a>The edible, often red berry-type fruit of Solanum lycopersicum, commonly known as a tomato plant...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/934add6f.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Tomato",
+               "Text" : "TomatoThe edible, often red berry-type fruit of Solanum lycopersicum, commonly known as a tomato plant..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Syzygium_samarangense\">Syzygium samarangense</a> A plant species in the family Myrtaceae, native to an area that includes the Greater Sunda...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/0b231f9b.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Syzygium_samarangense",
+               "Text" : "Syzygium samarangense A plant species in the family Myrtaceae, native to an area that includes the Greater Sunda..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Podophyllum\">May apple</a>An herbaceous perennial plant in the family Berberidaceae, described as a genus by Linnaeus in 1753.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/660784ad.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Podophyllum",
+               "Text" : "May appleAn herbaceous perennial plant in the family Berberidaceae, described as a genus by Linnaeus in 1753."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Oak_apple\">Oak apple</a>The common name for a large, round, vaguely apple-like gall commonly found on many species of oak.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/2cc69a9e.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Oak_apple",
+               "Text" : "Oak appleThe common name for a large, round, vaguely apple-like gall commonly found on many species of oak."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Crataegus\">Crataegus</a> A large genus of shrubs and trees in the family Rosaceae, native to temperate regions of the...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/e28d2541.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Crataegus",
+               "Text" : "Crataegus A large genus of shrubs and trees in the family Rosaceae, native to temperate regions of the..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Datura\">Datura</a> A genus of nine species of poisonous vespertine flowering plants belonging to the family...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/b29016a7.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Datura",
+               "Text" : "Datura A genus of nine species of poisonous vespertine flowering plants belonging to the family..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Maclura_pomifera\">Hedge apple</a>A small deciduous tree or large shrub, typically growing to tall.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/f68e2fe0.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Maclura_pomifera",
+               "Text" : "Hedge appleA small deciduous tree or large shrub, typically growing to tall."
+            }
+         ],
+         "Name" : "Botany"
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Inc.\">Apple Inc.</a>Apple Inc. is an American multinational technology company headquartered in Cupertino, California...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/apple.com.ico",
+                  "Height" : 16,
+                  "Width" : 16
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Inc.",
+               "Text" : "Apple Inc.Apple Inc. is an American multinational technology company headquartered in Cupertino, California..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Corps\">Apple Corps</a>A multi-armed multimedia corporation founded in London in January 1968 by the members of the...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/0ee59262.png",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Corps",
+               "Text" : "Apple CorpsA multi-armed multimedia corporation founded in London in January 1968 by the members of the..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/apple_Bank_for_Savings\">Apple Bank</a>Apple Bank for Savings provides consumer and small business banking services to the greater New...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/e9304783.png",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/apple_Bank_for_Savings",
+               "Text" : "Apple BankApple Bank for Savings provides consumer and small business banking services to the greater New..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Leisure_Group\">Apple Leisure Group</a>A vertically-integrated travel and hospitality company focused on packaged travel and...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/e77f0175.png",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Leisure_Group",
+               "Text" : "Apple Leisure GroupA vertically-integrated travel and hospitality company focused on packaged travel and..."
+            }
+         ],
+         "Name" : "Companies"
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/The_Apple_(1980_film)\">The Apple (1980 film)</a>A 1980 American-West German musical science fiction comedy film written and directed by Menahem...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/ca3778cb.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/The_Apple_(1980_film)",
+               "Text" : "The Apple (1980 film)A 1980 American-West German musical science fiction comedy film written and directed by Menahem..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/The_Apple_(1998_film)\">The Apple (1998 film)</a>The 1998 directorial debut by Samira Makhmalbaf, daughter of Iranian director Mohsen Makhmalbaf.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/51c5a500.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/The_Apple_(1998_film)",
+               "Text" : "The Apple (1998 film)The 1998 directorial debut by Samira Makhmalbaf, daughter of Iranian director Mohsen Makhmalbaf."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/The_Apple_(Star_Trek%3A_The_Original_Series)\">\"The Apple\" (Star Trek: The Original Series)</a>\"The Apple\" is episode No. 34, production No. 38, of the second season of the original science...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/The_Apple_(Star_Trek%3A_The_Original_Series)",
+               "Text" : "\"The Apple\" (Star Trek: The Original Series)\"The Apple\" is episode No. 34, production No. 38, of the second season of the original science..."
+            }
+         ],
+         "Name" : "Film and television"
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Records\">Apple Records</a>A record label founded by the Beatles in 1968, as a division of Apple Corps Ltd. It was initially...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/c511ebbb.png",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Records",
+               "Text" : "Apple RecordsA record label founded by the Beatles in 1968, as a division of Apple Corps Ltd. It was initially..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_(band)\">Apple (band)</a>A British psychedelic rock band.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_(band)",
+               "Text" : "Apple (band)A British psychedelic rock band."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/The_Apples_(Scottish_band)\">The Apples (Scottish band)</a>An indie-dance band from Scotland in the early 1990s.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/The_Apples_(Scottish_band)",
+               "Text" : "The Apples (Scottish band)An indie-dance band from Scotland in the early 1990s."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/The_Apples_(Israeli_band)\">The Apples (Israeli band)</a>An Israeli Funk nine piece \u2013 including a drummer, upright bassist, 4 brass, 2 DJs and a sound...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/20c83f75.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/The_Apples_(Israeli_band)",
+               "Text" : "The Apples (Israeli band)An Israeli Funk nine piece \u2013 including a drummer, upright bassist, 4 brass, 2 DJs and a sound..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_(album)\">Apple (album)</a>The only full-length studio album by the American alternative rock band Mother Love Bone.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/9ca01bdb.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_(album)",
+               "Text" : "Apple (album)The only full-length studio album by the American alternative rock band Mother Love Bone."
+            }
+         ],
+         "Name" : "Music"
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apples%2C_Vaud\">Apples, Vaud</a> A municipality in the district of Morges in the canton of Vaud in Switzerland.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/88722dce.png",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apples%2C_Vaud",
+               "Text" : "Apples, Vaud A municipality in the district of Morges in the canton of Vaud in Switzerland."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple%2C_Oklahoma\">Apple, Oklahoma</a>An unincorporated community located near Hugo Lake and State Highway 93 in Choctaw County, Oklahoma.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple%2C_Oklahoma",
+               "Text" : "Apple, OklahomaAn unincorporated community located near Hugo Lake and State Highway 93 in Choctaw County, Oklahoma."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_River_(Illinois)\">Apple River (Illinois)</a>A tributary of the Mississippi River, about long, in southwestern Wisconsin and northwestern...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/40af95f3.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_River_(Illinois)",
+               "Text" : "Apple River (Illinois)A tributary of the Mississippi River, about long, in southwestern Wisconsin and northwestern..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_River_(Wisconsin)\">Apple River (Wisconsin)</a>A tributary of the St. Croix River in northwestern Wisconsin in the United States.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/4c544161.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_River_(Wisconsin)",
+               "Text" : "Apple River (Wisconsin)A tributary of the St. Croix River in northwestern Wisconsin in the United States."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Creek_(stream)%2C_Missouri\">Apple Creek (stream), Missouri</a>A stream that rises in western Perry County, Missouri and empties into the Mississippi River...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Creek_(stream)%2C_Missouri",
+               "Text" : "Apple Creek (stream), MissouriA stream that rises in western Perry County, Missouri and empties into the Mississippi River..."
+            }
+         ],
+         "Name" : "Places"
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Ariane_Passenger_Payload_Experiment\">Ariane Passenger Payload Experiment</a>An experimental communication satellite with a C-Band transponder launched by the Indian Space...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Ariane_Passenger_Payload_Experiment",
+               "Text" : "Ariane Passenger Payload ExperimentAn experimental communication satellite with a C-Band transponder launched by the Indian Space..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_(automobile)\">Apple (automobile)</a>A short-lived American automobile manufactured by the Apple Automobile Company in Dayton, Ohio...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_(automobile)",
+               "Text" : "Apple (automobile)A short-lived American automobile manufactured by the Apple Automobile Company in Dayton, Ohio..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/command_key\">Apple key</a> A modifier key present on Apple keyboards.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/b2ec2b73.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/command_key",
+               "Text" : "Apple key A modifier key present on Apple keyboards."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/HP_Apple\">HP Apple</a> A virtual CPU in certain Hewlett-Packard programmable calculators emulating the HP Yorke processor.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/HP_Apple",
+               "Text" : "HP Apple A virtual CPU in certain Hewlett-Packard programmable calculators emulating the HP Yorke processor."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Pugetsound_Program_Library_Exchange\">Apple Pugetsound Program Library Exchange</a>A.P.P.L.E., also known as Apple Pugetsound Program Library Exchange was initially established in...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Pugetsound_Program_Library_Exchange",
+               "Text" : "Apple Pugetsound Program Library ExchangeA.P.P.L.E., also known as Apple Pugetsound Program Library Exchange was initially established in..."
+            }
+         ],
+         "Name" : "Technology"
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apples_(card_game)\">Apples (card game)</a>A 4-player trick-based game similar in play to hearts, spades, and bridge.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apples_(card_game)",
+               "Text" : "Apples (card game)A 4-player trick-based game similar in play to hearts, spades, and bridge."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Cup\">Apple Cup</a>An American college football rivalry between the University of Washington Huskies and Washington...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/c342a642.png",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Cup",
+               "Text" : "Apple CupAn American college football rivalry between the University of Washington Huskies and Washington..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Daily\">Apple Daily</a> A Hong Kong-based tabloid-style newspaper founded in 1995 by Jimmy Lai Chee Ying and is...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/a220d44b.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Daily",
+               "Text" : "Apple Daily A Hong Kong-based tabloid-style newspaper founded in 1995 by Jimmy Lai Chee Ying and is..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_(symbolism)\">Apple (symbolism)</a>Apples appear in many religious traditions, often as a mystical or forbidden fruit.",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/362ebc63.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_(symbolism)",
+               "Text" : "Apple (symbolism)Apples appear in many religious traditions, often as a mystical or forbidden fruit."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apples_(novel)\">Apples (novel)</a>The bestselling debut novel by Richard Milward, published in 2007.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apples_(novel)",
+               "Text" : "Apples (novel)The bestselling debut novel by Richard Milward, published in 2007."
+            }
+         ],
+         "Name" : "Other uses"
+      },
+      {
+         "Topics" : [
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Timeline_of_Apple_Inc._products\">Timeline of Apple Inc. products</a>This timeline of Apple Inc. products is a list of all stand-alone Apple II, Macintosh, and other...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/1ae3c2eb.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Timeline_of_Apple_Inc._products",
+               "Text" : "Timeline of Apple Inc. productsThis timeline of Apple Inc. products is a list of all stand-alone Apple II, Macintosh, and other..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_I\">Apple I</a>Apple Computer 1, also known later as the Apple I, or Apple-1, was released by the Apple Computer...",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_I",
+               "Text" : "Apple IApple Computer 1, also known later as the Apple I, or Apple-1, was released by the Apple Computer..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_II\">Apple II</a>An 8-bit home computer, one of the first highly successful mass-produced microcomputer products...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/270b6463.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_II",
+               "Text" : "Apple IIAn 8-bit home computer, one of the first highly successful mass-produced microcomputer products..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_II_series\">Apple II series</a>A family of home computers, one of the first highly successful mass-produced microcomputer...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/b8fb2100.png",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_II_series",
+               "Text" : "Apple II seriesA family of home computers, one of the first highly successful mass-produced microcomputer..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_III\">Apple III</a>A business-oriented personal computer produced and released by Apple Computer that was intended...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/3702da39.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_III",
+               "Text" : "Apple IIIA business-oriented personal computer produced and released by Apple Computer that was intended..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/macintosh\">Apple Macintosh</a>A series of personal computers designed, developed, and marketed by Apple Inc. Steve Jobs...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/apple.com.ico",
+                  "Height" : 16,
+                  "Width" : 16
+               },
+               "FirstURL" : "https://duckduckgo.com/macintosh",
+               "Text" : "Apple MacintoshA series of personal computers designed, developed, and marketed by Apple Inc. Steve Jobs..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/Apple_Store\">Apple Store</a>A chain of retail stores owned and operated by Apple Inc., dealing with computers and consumer...",
+               "Icon" : {
+                  "URL" : "https://duckduckgo.com/i/31cdd77a.jpg",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/Apple_Store",
+               "Text" : "Apple StoreA chain of retail stores owned and operated by Apple Inc., dealing with computers and consumer..."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Mammee_apple\">Mammee apple Meanings</a>  See related meanings for the phrase 'Mammee apple'.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Mammee_apple",
+               "Text" : "Mammee apple Meanings  See related meanings for the phrase 'Mammee apple'."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Rose_apple\">Rose apple Meanings</a>  Several fruits.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Rose_apple",
+               "Text" : "Rose apple Meanings  Several fruits."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Thorn_apple\">Thorn apple Meanings</a> :",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Thorn_apple",
+               "Text" : "Thorn apple Meanings :"
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Apple_(name)\">Apple (name) Meanings</a>  See related meanings for the phrase 'Apple (name)'.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Apple_(name)",
+               "Text" : "Apple (name) Meanings  See related meanings for the phrase 'Apple (name)'."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Apel\">Apel Meanings</a>  See related meanings for the word 'Apel'.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Apel",
+               "Text" : "Apel Meanings  See related meanings for the word 'Apel'."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Appel\">Appel Meanings</a>  See related meanings for the word 'Appel'.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Appel",
+               "Text" : "Appel Meanings  See related meanings for the word 'Appel'."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/APPEL\">APPEL Meanings</a>  See related meanings for the word 'APPEL'.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/APPEL",
+               "Text" : "APPEL Meanings  See related meanings for the word 'APPEL'."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Apples\">Apples Meanings</a>  See related meanings for the word 'Apples'.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Apples",
+               "Text" : "Apples Meanings  See related meanings for the word 'Apples'."
+            },
+            {
+               "Result" : "<a href=\"https://duckduckgo.com/d/Big_Apple\">Big Apple Meanings</a>  See related meanings for the phrase 'Big Apple'.",
+               "Icon" : {
+                  "URL" : "",
+                  "Height" : "",
+                  "Width" : ""
+               },
+               "FirstURL" : "https://duckduckgo.com/d/Big_Apple",
+               "Text" : "Big Apple Meanings  See related meanings for the phrase 'Big Apple'."
+            }
+         ],
+         "Name" : "See also"
+      }
+   ],
+   "Entity" : "",
+   "meta" : {
+      "maintainer" : {
+         "github" : "duckduckgo"
+      },
+      "perl_module" : "DDG::Fathead::Wikipedia",
+      "status" : "live",
+      "production_state" : "offline",
+      "dev_date" : null,
+      "js_callback_name" : "wikipedia",
+      "signal_from" : "wikipedia_fathead",
+      "live_date" : null,
+      "src_id" : 1,
+      "src_options" : {
+         "skip_end" : "0",
+         "skip_abstract" : 0,
+         "skip_qr" : "",
+         "language" : "en",
+         "skip_icon" : 0,
+         "skip_image_name" : 0,
+         "directory" : "",
+         "min_abstract_length" : "20",
+         "skip_abstract_paren" : 0,
+         "is_wikipedia" : 1,
+         "source_skip" : "",
+         "is_fanon" : 0,
+         "is_mediawiki" : 1,
+         "src_info" : ""
+      },
+      "repo" : "fathead",
+      "developer" : [
+         {
+            "url" : "http://www.duckduckhack.com",
+            "name" : "DDG Team",
+            "type" : "ddg"
+         }
+      ],
+      "tab" : "About",
+      "producer" : null,
+      "unsafe" : 0,
+      "id" : "wikipedia_fathead",
+      "dev_milestone" : "live",
+      "topic" : [
+         "productivity"
+      ],
+      "name" : "Wikipedia",
+      "attribution" : null,
+      "created_date" : null,
+      "example_query" : "nikola tesla",
+      "description" : "Wikipedia",
+      "is_stackexchange" : null,
+      "designer" : null,
+      "src_domain" : "en.wikipedia.org",
+      "src_name" : "Wikipedia",
+      "blockgroup" : null,
+      "src_url" : null
+   },
+   "Type" : "D",
+   "Redirect" : "",
+   "DefinitionURL" : "",
+   "AbstractURL" : "https://en.wikipedia.org/wiki/Apple_(disambiguation)",
+   "Definition" : "",
+   "AbstractSource" : "Wikipedia",
+   "Infobox" : "",
+   "Image" : "",
+   "ImageIsLogo" : 0,
+   "Abstract" : "",
+   "AbstractText" : "",
+   "AnswerType" : "",
+   "ImageHeight" : 0,
+   "Answer" : "",
+   "Results" : []
+}

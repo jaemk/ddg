@@ -1,0 +1,31 @@
+# Copyright (c) 2015 Aaron Power
+# Use of this source code is governed by the MIT/APACHE2.0 license that can be
+# found in the LICENCE-{APACHE, MIT} file.
+[package]
+name = "ddg"
+version = "0.1.0"
+authors = ["Aaronepower <theaaronepower@gmail.com>"]
+repository = "https://github.com/Aaronepower/ddg.git"
+homepage = "https://aaronepower.github.io/ddg/"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "ORM for DuckDuckGo."
+build = "src/lib/build.rs"
+include = ["src/**/*", "cli.yml", "Cargo.toml", "LICENCE-APACHE.md", "LICENCE-MIT.md"]
+[lib]
+name = "ddg"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "ddg"
+path = "src/main.rs"
+doc = false
+
+# For building serde in stable.
+[build-dependencies]
+serde_codegen = "0.7.11"
+
+[dependencies]
+serde = "0.7.11"
+serde_json = "0.7.3"
+serde_xml = "0.7.1"
