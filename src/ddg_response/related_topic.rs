@@ -92,16 +92,16 @@ impl serde::de::Visitor for Visitor {
 pub struct TopicResult {
     /// First URL for the Result.
     #[serde(rename="FirstURL")]
-    first_url: String,
+    pub first_url: String,
     /// Icon associated with `first_url`.
     #[serde(rename="Icon")]
-    icon: Icon,
+    pub icon: Icon,
     /// HTML link(s) to external site(s).
     #[serde(rename="Result")]
-    result: String,
+    pub result: String,
     /// Text from `first_url`.
     #[serde(rename="Text")]
-    text: String,
+    pub text: String,
 }
 
 
@@ -110,9 +110,9 @@ pub struct TopicResult {
 pub struct Topic {
     /// vec of external links associated with abstract.
     #[serde(rename="Topics")]
-    topics: Vec<RelatedTopic>,
+    pub topics: Vec<RelatedTopic>,
     /// The name of the topic. for example if the query was Apple, it could be
     /// a topic about botany, or companies.
     #[serde(rename="Name")]
-    name: String,
+    pub name: String,
 }

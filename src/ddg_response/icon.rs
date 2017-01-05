@@ -6,13 +6,13 @@ use serde::{de, Deserializer};
 pub struct Icon {
     /// The **suggested** height of the icon.
     #[serde(rename="Height", deserialize_with="deserialize_u64_or_empty_string")]
-    height: u64,
+    pub height: u64,
     /// The url to the icon.
     #[serde(rename="URL")]
-    url: String,
+    pub url: String,
     /// The **suggested** width of the icon.
     #[serde(rename="Width", deserialize_with="deserialize_u64_or_empty_string")]
-    width: u64,
+    pub width: u64,
 }
 
 // from: http://stackoverflow.com/questions/37870428/serde-handle-value-being-two-different-types
