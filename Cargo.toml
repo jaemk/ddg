@@ -2,30 +2,32 @@
 # Use of this source code is governed by the MIT/APACHE2.0 license that can be
 # found in the LICENCE-{APACHE, MIT} file.
 [package]
-name = "ddg"
-version = "0.1.0"
 authors = ["Aaronepower <theaaronepower@gmail.com>"]
-repository = "https://github.com/Aaronepower/ddg.git"
-homepage = "https://aaronepower.github.io/ddg/"
+build = "build.rs"
+description = "An ORM for DuckDuckGo."
+homepage = "https://github.com/Aaronepower/ddg"
+include = ["src/**/*", "build.rs", "Cargo.toml", "LICENCE-APACHE.md", "LICENCE-MIT.md"]
 license = "MIT/Apache-2.0"
+name = "ddg"
 readme = "README.md"
-description = "ORM for DuckDuckGo."
-build = "src/lib/build.rs"
-include = ["src/**/*", "cli.yml", "Cargo.toml", "LICENCE-APACHE.md", "LICENCE-MIT.md"]
-[lib]
-name = "ddg"
-path = "src/lib/lib.rs"
-
-[[bin]]
-name = "ddg"
-path = "src/main.rs"
-doc = false
+repository = "https://github.com/Aaronepower/ddg.git"
+version = "0.2.0"
 
 # For building serde in stable.
 [build-dependencies]
-serde_codegen = "0.7.11"
+serde_codegen = "0.8"
 
 [dependencies]
-serde = "0.7.11"
-serde_json = "0.7.3"
-serde_xml = "0.7.1"
+serde = "0.8"
+serde_json = "0.8"
+
+[dependencies.reqwest]
+version = "0.2"
+optional = true
+
+[dependencies.hyper]
+version = "0.9"
+optional = true
+
+[features]
+default = ["reqwest"]
