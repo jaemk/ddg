@@ -66,6 +66,7 @@ impl<'a> Query<'a> {
     }
 }
 
+/// Error from parsing or convertingi into a URL.
 #[derive(Debug)]
 pub enum Error {
     /// An error in making the HTTP request, or parsing the query string into a

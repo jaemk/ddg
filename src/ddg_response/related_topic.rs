@@ -6,7 +6,9 @@ use serde;
 /// `TopicResult`s in a certain area of interest.
 #[derive(Debug, Clone)]
 pub enum RelatedTopic {
+    /// The link had a single topic.
     TopicResult(TopicResult),
+    /// The link had a whole topic category.
     Topic(Topic),
 }
 

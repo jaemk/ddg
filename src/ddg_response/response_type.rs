@@ -1,5 +1,6 @@
 use self::Type::*;
 
+/// The Different types of Instant Answers.
 #[derive(Clone, Copy, Debug, Deserialize)]
 pub enum Type {
     /// An Article about the answer.

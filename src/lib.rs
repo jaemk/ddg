@@ -27,7 +27,9 @@
 extern crate serde;
 extern crate serde_json;
 
+/// The Query struct, and it's Error struct.
 pub mod query;
+/// The DdgResponse, and all the related types.
 pub mod ddg_response {
     include!(concat!(env!("OUT_DIR"), "/serde_types.rs"));
 }
