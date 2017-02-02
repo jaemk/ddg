@@ -2,7 +2,7 @@ use super::*;
 
 /// The Response from DuckDuckGo.
 #[derive(Clone, Debug, Default, Deserialize)]
-pub struct DdgResponse {
+pub struct Response {
     /// The Topic summary (can contain HTML, e.g. italics).
     #[serde(rename="Abstract")]
     pub abstract_html: String,
@@ -63,7 +63,7 @@ mod tests {
     fn is_valid_json() {
         let json = include_str!("../tests/test.json");
 
-        let actual_json: DdgResponse = serde_json::from_str(json).unwrap();
+        let actual_json: Response = serde_json::from_str(json).unwrap();
 
         assert_eq!(actual_json.heading, "Apple");
     }

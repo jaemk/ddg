@@ -1,3 +1,5 @@
+use std::fmt;
+
 use serde::{de, Deserializer};
 
 /// An icon associated with a URL. Icon's can be bigger than the dimensions
@@ -21,24 +23,26 @@ struct DeserializeU64OrEmptyStringVisitor;
 impl de::Visitor for DeserializeU64OrEmptyStringVisitor {
     type Value = u64;
 
-    fn visit_u64<E>(&mut self, v: u64) -> Result<Self::Value, E>
-        where E: de::Error
-    {
+    fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
+        write!(formatter, "an unsigned integer or an empty string.")
+    }
+
+    fn visit_u64<E>(self, v: u64) -> Result<Self::Value, E> where E: de::Error {
         Ok(v)
     }
 
-    fn visit_str<E>(&mut self, v: &str) -> Result<Self::Value, E>
-        where E: de::Error
+    fn visit_str<E>(self, v: &str) -> Result<Self::Value, E> where E: de::Error
     {
-        if v == "" {
+        if v.is_empty() {
             Ok(0)
         } else {
-            Err(E::invalid_value("got a non-empty string"))
+            Err(E::invalid_value(de::Unexpected::Str(v), &self))
         }
     }
 }
 
-fn deserialize_u64_or_empty_string<D>(deserializer: &mut D) -> Result<u64, D::Error>
+fn deserialize_u64_or_empty_string<D>(deserializer: D)
+    -> Result<u64, D::Error>
     where D: Deserializer
 {
     deserializer.deserialize(DeserializeU64OrEmptyStringVisitor)

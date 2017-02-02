@@ -1,5 +1,7 @@
+use std::fmt;
+
 use super::Icon;
-use serde;
+use serde::de;
 
 /// Internal link(s) to related topics associated with abstract. A result could
 /// either be a single `TopicResult`, or a `Topic` containing multiple
@@ -12,9 +14,9 @@ pub enum RelatedTopic {
     Topic(Topic),
 }
 
-impl serde::de::Deserialize for RelatedTopic {
-    fn deserialize<D>(deserializer: &mut D) -> Result<Self, D::Error>
-        where D: serde::Deserializer
+impl de::Deserialize for RelatedTopic {
+    fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
+        where D: de::Deserializer
     {
         deserializer.deserialize(Visitor)
     }
@@ -22,11 +24,15 @@ impl serde::de::Deserialize for RelatedTopic {
 
 struct Visitor;
 
-impl serde::de::Visitor for Visitor {
+impl de::Visitor for Visitor {
     type Value = RelatedTopic;
 
-    fn visit_map<V>(&mut self, mut visitor: V) -> Result<RelatedTopic, V::Error>
-        where V: serde::de::MapVisitor
+    fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
+        write!(formatter, "a object containing with Topics, FirstURL, Result properties")
+    }
+
+    fn visit_map<V>(self, mut visitor: V) -> Result<RelatedTopic, V::Error>
+        where V: de::MapVisitor
     {
         let s: String = visitor.visit_key()?.expect("got struct with no fields");
         let val = match &*s {
@@ -82,7 +88,6 @@ impl serde::de::Visitor for Visitor {
             },
             other => panic!("no struct has field `{}`", other),
         };
-        visitor.end()?;
         val
     }
 }

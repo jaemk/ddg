@@ -3,7 +3,6 @@
 # found in the LICENCE-{APACHE, MIT} file.
 [package]
 authors = ["Aaronepower <theaaronepower@gmail.com>"]
-build = "build.rs"
 description = "An ORM for DuckDuckGo."
 homepage = "https://github.com/Aaronepower/ddg"
 include = ["src/**/*", "build.rs", "Cargo.toml", "LICENCE-APACHE.md", "LICENCE-MIT.md"]
@@ -11,22 +10,19 @@ license = "MIT/Apache-2.0"
 name = "ddg"
 readme = "README.md"
 repository = "https://github.com/Aaronepower/ddg.git"
-version = "0.2.2"
-
-# For building serde in stable.
-[build-dependencies]
-serde_codegen = "0.8"
+version = "0.3.0"
 
 [dependencies]
-serde = "0.8"
-serde_json = "0.8"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
 
 [dependencies.reqwest]
-version = "0.2"
+version = "0.4"
 optional = true
 
 [dependencies.hyper]
-version = "0.9"
+version = "0.10"
 optional = true
 
 [features]

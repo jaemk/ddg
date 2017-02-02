@@ -25,15 +25,14 @@
 #[cfg(feature = "reqwest")] extern crate reqwest;
 #[cfg(feature = "hyper")] extern crate hyper;
 extern crate serde;
+#[macro_use] extern crate serde_derive;
 extern crate serde_json;
 
-/// The Query struct, and it's Error struct.
+/// The Query struct, and it's Error enum.
 pub mod query;
-/// The DdgResponse, and all the related types.
-pub mod ddg_response {
-    include!(concat!(env!("OUT_DIR"), "/serde_types.rs"));
-}
+/// The Response, and all the related types.
+pub mod response;
 
 pub use query::Query;
-pub use ddg_response::DdgResponse;
+pub use response::{RelatedTopic, Response, Type};
 

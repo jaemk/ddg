@@ -61,7 +61,7 @@ impl<'a> Query<'a> {
 
     /// Execute the request and parses it into a `DdgResponse` struct.
     #[cfg(feature = "reqwest")]
-    pub fn execute(self) -> Result<DdgResponse, Error> {
+    pub fn execute(self) -> Result<Response, Error> {
         Ok(serde_json::from_reader(reqwest::get(self)?)?)
     }
 }
@@ -90,8 +90,8 @@ impl From<serde_json::Error> for Error {
 
 impl<'a> IntoUrl for Query<'a> {
     fn into_url(self) -> Result<Url, UrlError> {
-        let mut query = format!("https://api.duckduckgo.com/?q={}&t={}&format=json&no_redirect=1",
-                                self.query, self.name);
+        const URL: &'static str = "https://api.duckduckgo.com?format=json&no_redirect=1";
+        let mut query = String::from(URL);
 
         if self.no_html {
             query.push_str("&no_html=1");
@@ -101,7 +101,10 @@ impl<'a> IntoUrl for Query<'a> {
             query.push_str("&skip_disambig=1");
         }
 
-        Url::parse(&query)
+        Url::parse_with_params(&query, &[
+            ("q", &*self.query),
+            ("t", &*self.name)
+        ])
     }
 }
 
