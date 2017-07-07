@@ -14,17 +14,17 @@ pub enum RelatedTopic {
     Topic(Topic),
 }
 
-impl de::Deserialize for RelatedTopic {
+impl<'de> de::Deserialize<'de> for RelatedTopic {
     fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
-        where D: de::Deserializer
+        where D: de::Deserializer<'de>
     {
-        deserializer.deserialize(Visitor)
+        deserializer.deserialize_map(Visitor)
     }
 }
 
 struct Visitor;
 
-impl de::Visitor for Visitor {
+impl<'de> de::Visitor<'de> for Visitor {
     type Value = RelatedTopic;
 
     fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
@@ -32,57 +32,57 @@ impl de::Visitor for Visitor {
     }
 
     fn visit_map<V>(self, mut visitor: V) -> Result<RelatedTopic, V::Error>
-        where V: de::MapVisitor
+        where V: de::MapAccess<'de>
     {
-        let s: String = visitor.visit_key()?.expect("got struct with no fields");
+        let s: String = visitor.next_key()?.expect("got struct with no fields");
         let val = match &*s {
             "Topics" => {
                 Ok(RelatedTopic::Topic(Topic {
-                    topics: visitor.visit_value()?,
+                    topics: visitor.next_value()?,
                     name: {
-                        let s: String = visitor.visit_key()?.expect("Name field");
+                        let s: String = visitor.next_key()?.expect("Name field");
                         assert_eq!(&s, "Name");
-                        visitor.visit_value()?
+                        visitor.next_value()?
                     },
                 }))
             }
             "FirstURL" => {
                 Ok(RelatedTopic::TopicResult(TopicResult {
-                    first_url: visitor.visit_value()?,
+                    first_url: visitor.next_value()?,
                     icon: {
-                        let s: String = visitor.visit_key()?.expect("icon field");
+                        let s: String = visitor.next_key()?.expect("icon field");
                         assert_eq!(&s, "Icon");
-                        visitor.visit_value()?
+                        visitor.next_value()?
                     },
                     result: {
-                        let s: String = visitor.visit_key()?.expect("result field");
+                        let s: String = visitor.next_key()?.expect("result field");
                         assert_eq!(&s, "Result");
-                        visitor.visit_value()?
+                        visitor.next_value()?
                     },
                     text: {
-                        let s: String = visitor.visit_key()?.expect("text field");
+                        let s: String = visitor.next_key()?.expect("text field");
                         assert_eq!(&s, "Text");
-                        visitor.visit_value()?
+                        visitor.next_value()?
                     },
                 }))
             },
             "Result" => {
                 Ok(RelatedTopic::TopicResult(TopicResult {
-                    result: visitor.visit_value()?,
+                    result: visitor.next_value()?,
                     icon: {
-                        let s: String = visitor.visit_key()?.expect("icon field");
+                        let s: String = visitor.next_key()?.expect("icon field");
                         assert_eq!(&s, "Icon");
-                        visitor.visit_value()?
+                        visitor.next_value()?
                     },
                     first_url: {
-                        let s: String = visitor.visit_key()?.expect("result field");
+                        let s: String = visitor.next_key()?.expect("result field");
                         assert_eq!(&s, "FirstURL");
-                        visitor.visit_value()?
+                        visitor.next_value()?
                     },
                     text: {
-                        let s: String = visitor.visit_key()?.expect("text field");
+                        let s: String = visitor.next_key()?.expect("text field");
                         assert_eq!(&s, "Text");
-                        visitor.visit_value()?
+                        visitor.next_value()?
                     },
                 }))
             },

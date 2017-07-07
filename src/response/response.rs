@@ -61,7 +61,7 @@ mod tests {
 
     #[test]
     fn is_valid_json() {
-        let json = include_str!("../tests/test.json");
+        let json = include_str!("../../tests/test.json");
 
         let actual_json: Response = serde_json::from_str(json).unwrap();
 

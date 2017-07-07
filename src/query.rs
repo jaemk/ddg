@@ -1,12 +1,7 @@
 use std::borrow::Cow;
+use std::{fmt, error};
 
-#[cfg(feature = "reqwest")]
 use reqwest::{self, IntoUrl, Url, UrlError, Error as HttpError};
-
-#[cfg(feature = "hyper")] use hyper::Url;
-#[cfg(feature = "hyper")] use hyper::client::IntoUrl;
-#[cfg(feature = "hyper")]
-use hyper::error::{ParseError as UrlError, Error as HttpError};
 
 use serde_json;
 
@@ -26,7 +21,7 @@ impl<'a> Query<'a> {
     /// of your app. It is recommended to use a constant for the name of your
     /// app.
     ///
-    /// ```no_run
+    /// ```
     /// use ddg::Query;
     /// const APP_NAME: &'static str = "ddg_example_app";
     /// let query = Query::new("Rust", APP_NAME);
@@ -40,7 +35,7 @@ impl<'a> Query<'a> {
     /// Will strip out any HTML content from the text in the Response
     /// eg.(_italics_, **bolds**, etc)
     ///
-    /// ```no_run
+    /// ```
     /// use ddg::Query;
     /// const APP_NAME: &'static str = "ddg_example_app";
     ///
@@ -60,7 +55,6 @@ impl<'a> Query<'a> {
     }
 
     /// Execute the request and parses it into a `DdgResponse` struct.
-    #[cfg(feature = "reqwest")]
     pub fn execute(self) -> Result<Response, Error> {
         Ok(serde_json::from_reader(reqwest::get(self)?)?)
     }
@@ -73,7 +67,30 @@ pub enum Error {
     /// url.
     Http(HttpError),
     /// An error in parsing the JSON.
-    SerdeJson(serde_json::Error),
+    Serde(serde_json::Error),
+}
+
+impl fmt::Display for Error {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        use std::error::Error;
+        use self::Error::*;
+
+        match *self {
+            Http(ref err) => write!(f, "Http: {}", err.description()),
+            Serde(ref err) => write!(f, "Serde: {}", err.description()),
+        }
+    }
+}
+
+impl error::Error for Error {
+    fn description(&self) -> &str {
+        use self::Error::*;
+
+        match *self {
+            Http(ref err) => err.description(),
+            Serde(ref err) => err.description(),
+        }
+    }
 }
 
 impl From<HttpError> for Error {
@@ -84,7 +101,7 @@ impl From<HttpError> for Error {
 
 impl From<serde_json::Error> for Error {
     fn from(error: serde_json::Error) -> Self {
-        Error::SerdeJson(error)
+        Error::Serde(error)
     }
 }
 

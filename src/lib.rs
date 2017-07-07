@@ -22,10 +22,9 @@
 
 #![deny(missing_docs)]
 
-#[cfg(feature = "reqwest")] extern crate reqwest;
-#[cfg(feature = "hyper")] extern crate hyper;
-extern crate serde;
 #[macro_use] extern crate serde_derive;
+extern crate reqwest;
+extern crate serde;
 extern crate serde_json;
 
 /// The Query struct, and it's Error enum.

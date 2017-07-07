@@ -20,7 +20,7 @@ pub struct Icon {
 // from: http://stackoverflow.com/questions/37870428/serde-handle-value-being-two-different-types
 struct DeserializeU64OrEmptyStringVisitor;
 
-impl de::Visitor for DeserializeU64OrEmptyStringVisitor {
+impl<'de> de::Visitor<'de> for DeserializeU64OrEmptyStringVisitor {
     type Value = u64;
 
     fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
@@ -41,9 +41,9 @@ impl de::Visitor for DeserializeU64OrEmptyStringVisitor {
     }
 }
 
-fn deserialize_u64_or_empty_string<D>(deserializer: D)
+fn deserialize_u64_or_empty_string<'de, D>(deserializer: D)
     -> Result<u64, D::Error>
-    where D: Deserializer
+    where D: Deserializer<'de>
 {
-    deserializer.deserialize(DeserializeU64OrEmptyStringVisitor)
+    deserializer.deserialize_any(DeserializeU64OrEmptyStringVisitor)
 }
