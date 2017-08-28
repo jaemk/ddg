@@ -11,7 +11,7 @@ can be used with your own hyper client implementation.
 
 ### Example
 
-```
+```rust
 use ddg::Query;
 const APP_NAME: &'static str = "ddg_example_app";
 // Search for Rust and we want to strip out any HTML content in the answers.
