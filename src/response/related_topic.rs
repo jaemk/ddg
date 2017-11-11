@@ -24,6 +24,26 @@ impl<'de> de::Deserialize<'de> for RelatedTopic {
 
 struct Visitor;
 
+macro_rules! serialise {
+    ($builder:ident, $visitor:ident) => {
+        match &*$visitor.next_key::<String>().expect("valid key").expect("field") {
+            "Icon" => {
+                $builder.icon = $visitor.next_value()?;
+            }
+            "Result" => {
+                $builder.result = $visitor.next_value()?;
+            }
+            "FirstURL" => {
+                $builder.first_url = $visitor.next_value()?;
+            }
+            "Text" => {
+                $builder.text = $visitor.next_value()?;
+            }
+            other => panic!("no struct has key `{}`", other),
+        }
+    }
+}
+
 impl<'de> de::Visitor<'de> for Visitor {
     type Value = RelatedTopic;
 
@@ -33,63 +53,95 @@ impl<'de> de::Visitor<'de> for Visitor {
 
     fn visit_map<V>(self, mut visitor: V) -> Result<RelatedTopic, V::Error>
         where V: de::MapAccess<'de>
-    {
-        let s: String = visitor.next_key()?.expect("got struct with no fields");
-        let val = match &*s {
-            "Topics" => {
-                Ok(RelatedTopic::Topic(Topic {
-                    topics: visitor.next_value()?,
-                    name: {
-                        let s: String = visitor.next_key()?.expect("Name field");
-                        assert_eq!(&s, "Name");
-                        visitor.next_value()?
-                    },
-                }))
-            }
-            "FirstURL" => {
-                Ok(RelatedTopic::TopicResult(TopicResult {
-                    first_url: visitor.next_value()?,
-                    icon: {
-                        let s: String = visitor.next_key()?.expect("icon field");
-                        assert_eq!(&s, "Icon");
-                        visitor.next_value()?
-                    },
-                    result: {
-                        let s: String = visitor.next_key()?.expect("result field");
-                        assert_eq!(&s, "Result");
-                        visitor.next_value()?
-                    },
-                    text: {
-                        let s: String = visitor.next_key()?.expect("text field");
-                        assert_eq!(&s, "Text");
-                        visitor.next_value()?
-                    },
-                }))
-            },
-            "Result" => {
-                Ok(RelatedTopic::TopicResult(TopicResult {
-                    result: visitor.next_value()?,
-                    icon: {
-                        let s: String = visitor.next_key()?.expect("icon field");
-                        assert_eq!(&s, "Icon");
-                        visitor.next_value()?
-                    },
-                    first_url: {
-                        let s: String = visitor.next_key()?.expect("result field");
-                        assert_eq!(&s, "FirstURL");
-                        visitor.next_value()?
-                    },
-                    text: {
-                        let s: String = visitor.next_key()?.expect("text field");
-                        assert_eq!(&s, "Text");
-                        visitor.next_value()?
-                    },
-                }))
-            },
-            other => panic!("no struct has field `{}`", other),
-        };
-        val
-    }
+        {
+            let s: String = visitor.next_key()?.expect("got struct with no fields");
+            let val = match &*s {
+                "Topics" => {
+                    Ok(RelatedTopic::Topic(Topic {
+                        topics: visitor.next_value()?,
+                        name: {
+                            let s: String = visitor.next_key()?.expect("Name field");
+                            assert_eq!(&s, "Name");
+                            visitor.next_value()?
+                        },
+                    }))
+                },
+
+                "Name" => {
+                    Ok(RelatedTopic::Topic(Topic {
+                        name: visitor.next_value()?,
+                        topics: {
+                            let s: String = visitor.next_key()?.expect("Topics field");
+                            assert_eq!(&s, "Topics");
+                            visitor.next_value()?
+                        },
+                    }))
+                },
+
+                "FirstURL" => {
+                    let mut builder = TopicResultBuilder::default();
+                    let first_url = visitor.next_value()?;
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+
+                    Ok(RelatedTopic::TopicResult(TopicResult {
+                        first_url: first_url,
+                        icon: builder.icon.expect("Icon field"),
+                        result: builder.result.expect("Result field"),
+                        text: builder.text.expect("Text field"),
+                    }))
+                },
+
+                "Result" => {
+                    let mut builder = TopicResultBuilder::default();
+                    let result = visitor.next_value()?;
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+
+                    Ok(RelatedTopic::TopicResult(TopicResult {
+                        first_url: builder.first_url.expect("Result field"),
+                        icon: builder.icon.expect("Icon field"),
+                        result: result,
+                        text: builder.text.expect("Text field"),
+                    }))
+                },
+
+                "Icon" => {
+                    let mut builder = TopicResultBuilder::default();
+                    let icon = visitor.next_value()?;
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+
+                    Ok(RelatedTopic::TopicResult(TopicResult {
+                        first_url: builder.first_url.expect("Result field"),
+                        icon: icon,
+                        result: builder.result.expect("Icon field"),
+                        text: builder.text.expect("Text field"),
+                    }))
+                },
+
+                "Text" => {
+                    let mut builder = TopicResultBuilder::default();
+                    let text = visitor.next_value()?;
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+                    serialise!(builder, visitor);
+
+                    Ok(RelatedTopic::TopicResult(TopicResult {
+                        first_url: builder.first_url.expect("Result field"),
+                        icon: builder.icon.expect("Icon field"),
+                        result: builder.result.expect("Result field"),
+                        text: text,
+                    }))
+                },
+
+                other => panic!("no struct has field `{}`", other),
+            };
+            val
+        }
 }
 
 /// An link associated with abstract.
@@ -107,6 +159,15 @@ pub struct TopicResult {
     /// Text from `first_url`.
     #[serde(rename="Text")]
     pub text: String,
+}
+
+// Internal struct for handling non guarenteed order of TopicResult.
+#[derive(Default)]
+struct TopicResultBuilder {
+    pub first_url: Option<String>,
+    pub icon: Option<Icon>,
+    pub result: Option<String>,
+    pub text: Option<String>,
 }
 
 
